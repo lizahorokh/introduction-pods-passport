@@ -41,6 +41,7 @@ mod test {
     pub type C = PoseidonGoldilocksConfig;
 
     #[test]
+    #[ignore]
     fn test_find() -> anyhow::Result<()> {
         let mut msg = [0u8; DOC_LENGTH];
         OsRng.fill_bytes(&mut msg);

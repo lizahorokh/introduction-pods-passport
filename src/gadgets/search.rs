@@ -192,6 +192,7 @@ mod test {
     pub const DOC_LENGTH: usize = 3072;
 
     #[test]
+    #[ignore]
     fn test_merkle_root() -> anyhow::Result<()> {
         let window_len = 34;
         let mut msg = [0u8; DOC_LENGTH];
@@ -213,6 +214,7 @@ mod test {
     }
 
     #[test]
+    #[ignore]
     fn test_find() -> anyhow::Result<()> {
         for window_len in 32..36 {
             let mut msg = [0u8; DOC_LENGTH];

@@ -8,6 +8,7 @@ pub mod ed25519pod;
 pub mod gadgets;
 pub mod mdlpod;
 pub mod rsapod;
+pub mod passportpod;
 
 pub enum PodType {
     Ecdsa = 1001,

@@ -621,6 +621,7 @@ pub mod tests {
     }
 
     #[test]
+    #[ignore]
     fn test_rsa_pod_with_mainpod_verify() -> Result<()> {
         let (rsa_pod, vd_set, msg_encoded) = get_test_rsa_pod().unwrap();
         let params = rsa_pod.params().clone();

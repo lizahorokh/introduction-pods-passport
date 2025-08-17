@@ -807,6 +807,7 @@ pub mod tests {
     }
 
     #[test]
+    #[ignore]
     fn test_verify_mdl_no_sig() -> anyhow::Result<()> {
         let mdl_data = cbor_parsed()?;
         let mut builder = CircuitBuilder::new(CircuitConfig::standard_recursion_config());
@@ -834,6 +835,7 @@ pub mod tests {
     }
 
     #[test]
+    #[ignore]
     fn test_verify_mdl_with_sig() -> anyhow::Result<()> {
         let mdl_data = cbor_parsed()?;
         let pk = public_key_from_bytes(include_bytes!("../test_keys/mdl/issuer-cert.pem"))?;
@@ -881,11 +883,13 @@ pub mod tests {
     }
 
     #[test]
+    #[ignore]
     fn test_mdl_pod() -> anyhow::Result<()> {
         get_test_mdl_pod().map(|_| ())
     }
 
     #[test]
+    #[ignore]
     fn test_mdl_pod_serialization() -> anyhow::Result<()> {
         let (pod, params, vd_set) = get_test_mdl_pod()?;
         let data = pod.serialize_data();

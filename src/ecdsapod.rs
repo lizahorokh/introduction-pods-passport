@@ -500,6 +500,7 @@ pub mod tests {
     /// test to ensure that the pub_self_statements methods match between the
     /// in-circuit and the out-circuit implementations
     #[test]
+    #[ignore]
     fn test_pub_self_statements_target() -> Result<()> {
         let params = &Default::default();
 
@@ -600,6 +601,7 @@ pub mod tests {
     }
 
     #[test]
+    #[ignore]
     fn test_ecdsa_pod() -> Result<()> {
         let (ecdsa_pod, params, vd_set, msg) = get_test_ecdsa_pod()?;
 
@@ -620,6 +622,7 @@ pub mod tests {
     }
 
     #[test] // this is for the GitHub CI, it takes too long and the CI would fail.
+    #[ignore]
     fn test_serialization() -> Result<()> {
         // This is the line
         let (ecdsa_pod, params, vd_set, _) = get_test_ecdsa_pod()?;

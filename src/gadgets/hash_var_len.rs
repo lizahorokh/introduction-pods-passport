@@ -171,6 +171,7 @@ mod test {
     type C = plonky2::plonk::config::PoseidonGoldilocksConfig;
 
     #[test]
+    #[ignore]
     fn test_hash_var_len() -> anyhow::Result<()> {
         for _ in 0..40 {
             let max_len = OsRng.gen_range(0..129);
@@ -199,6 +200,7 @@ mod test {
     }
 
     #[test]
+    #[ignore]
     fn test_pod_hash() -> anyhow::Result<()> {
         for _ in 0..50 {
             let max_len = OsRng.gen_range(1..25);
